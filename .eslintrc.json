@@ -1,17 +1,17 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "extends": [
-    "next/core-web-vitals",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "rules": {
-    "react-hooks/exhaustive-deps": "off",
-    "no-unused-vars": "warn",
-    "no-func-assign": "warn",
-    "block-scoped-var": "warn",
-    "camelcase": "warn",
-    "eqeqeq": "warn"
-  }
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "react-hooks/exhaustive-deps": "off",
+        "no-unused-vars": "error",
+        "no-func-assign": "error",
+        "block-scoped-var": "error",
+        "camelcase": "warn",
+        "eqeqeq": "error"
+    }
 }
