@@ -38,4 +38,11 @@ export const Button4: Story = {
   }
 }
 
+export const Transparent: Story = {
+  args: {
+    children: "transparent",
+    variant: "transparent"
+  }
+}
+
 export default meta;
