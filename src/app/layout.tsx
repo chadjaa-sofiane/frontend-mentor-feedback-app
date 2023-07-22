@@ -1,7 +1,11 @@
 import "./globals.css";
 import { Jost } from "next/font/google";
 
-const inter = Jost({ subsets: ["latin"] });
+const jost = Jost({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: '--font-jost'
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} w-full h-screen`}>{children}</body>
+      <body className={`${jost.variable} w-full h-screen`}>{children}</body>
     </html>
   );
 }
