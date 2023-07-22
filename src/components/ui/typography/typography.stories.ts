@@ -5,6 +5,14 @@ const meta: Meta<TypographyProps> = {
   title: "design_system/typography",
   component: Typography,
   tags: ["autodocs"],
+  argTypes: {
+    variant: {
+      control: {
+        type: "radio",
+      },
+      options: ["h1", "h2", "h3", "h4", "body1", "body2", "body3"],
+    },
+  },
 };
 
 type Story = StoryObj<TypographyProps>;
@@ -45,18 +53,19 @@ export const body1: Story = {
   },
 };
 
-
 export const body2: Story = {
   args: {
     variant: "body2",
-    children:"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu",
+    children:
+      "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu",
   },
 };
 
 export const body3: Story = {
   args: {
     variant: "body3",
-    children:"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu",
+    children:
+      "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu",
   },
 };
 
